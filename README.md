@@ -1,6 +1,15 @@
-Setup kamu saat ini udah keren banget: **Unbound ➜ PowerDNS Recursor ➜ BIND RPZ**. Kamu udah punya fondasi kuat buat DNS resolver cepat dan aman, ditambah dengan **kontrol penuh atas filtering via RPZ**. Tapi masih ada **optimasi dan perkuatan performa + filtering** yang bisa kamu lakukan, apalagi buat lingkungan ISP dengan banyak klien.
+## Jasa Deploy Server DNS Recursive untuk ISP
+Nomor HP/WhatsApp 0822 33 483 221
 
-Berikut ini saran **optimalisasi teknis, performa, dan keamanan**:
+DNS SERVER ISP: **Unbound ➜ PowerDNS Recursor ➜ BIND RPZ**. DNS server recursive yang cepat, kuat, stabil, optimize untuk ribuan client pada jaringan ISP
+
+-unbound untuk resolver utama tercepat dan overhead rendah
+
+-pdns-recursor untuk menambah kecepatan, sbg cache layer
+
+-bind rpz sebagai filtering konten/domain, ini untuk memblokir iklan, tracking, situs porno, judi online, malware, phising, scam
+
+Berikut ini sedikit ulasan **optimalisasi teknis, performa, dan keamanan**:
 
 ---
 
