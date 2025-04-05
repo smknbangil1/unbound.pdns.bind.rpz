@@ -1,0 +1,23 @@
+$TTL 86400
+@   IN  SOA localhost. root.localhost. (
+        2025040402 ; Serial (increment setiap update)
+        3600       ; Refresh
+        1800       ; Retry
+        604800     ; Expire
+        86400 )    ; Minimum TTL
+
+    IN  NS  localhost.
+
+ep1.adtrafficquality.google.rpz.blockads.local.      CNAME .
+ep2.adtrafficquality.google.rpz.blockads.local.      CNAME .
+fundingchoicesmessages.google.com.rpz.blockads.local. CNAME .
+googleads.g.doubleclick.net.rpz.blockads.local.      CNAME .
+pagead2.googlesyndication.com.rpz.blockads.local.    CNAME .
+tpc.googlesyndication.com.rpz.blockads.local.        CNAME .
+graph.facebook.com.rpz.blockads.local.               CNAME .
+events.facebook.com.rpz.blockads.local.              CNAME .
+pixel.facebook.com.rpz.blockads.local.               CNAME .
+www.google-analytics.com.rpz.blockads.local.         CNAME .
+widget.tagembed.com.rpz.blockads.local.              CNAME .
+static.doubleclick.net.rpz.blockads.local.           CNAME .
+static.cloudflareinsights.com.rpz.blockads.local.    CNAME .
