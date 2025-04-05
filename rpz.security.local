@@ -1,0 +1,21 @@
+$TTL 2h
+@       IN      SOA     rpz.security.local. root.rpz.security.local. (
+                        2025040401  ; Serial
+                        1h          ; Refresh
+                        15m         ; Retry
+                        30d         ; Expire
+                        2h          ; Negative Cache TTL
+)
+        IN      NS      localhost.
+
+badmalware.com.rpz.security.local.       CNAME   .
+*.badmalware.com.rpz.security.local.     CNAME   .
+
+badsite.com.rpz.security.local.          CNAME   .
+*.badsite.com.rpz.security.local.        CNAME   .
+
+phishingsite.net.rpz.security.local.     CNAME   .
+*.phishingsite.net.rpz.security.local.   CNAME   .
+
+scamsite.org.rpz.security.local.         CNAME   .
+*.scamsite.org.rpz.security.local.       CNAME   .
