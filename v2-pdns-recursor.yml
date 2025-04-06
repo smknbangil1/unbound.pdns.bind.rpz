@@ -1,0 +1,50 @@
+dnssec:
+  validation: 'off'
+
+incoming:
+  allow_from:
+    - '127.0.0.1/32'
+  listen:
+    - '127.0.0.1'
+  port: 5311
+  reuseport: true
+  pdns_distributes_queries: false
+
+logging:
+  loglevel: 3
+  quiet: false
+  timestamp: true
+  common_errors: true
+  disable_syslog: false
+
+outgoing:
+  max_qperq: 8192
+
+packetcache:
+  ttl: 600
+
+recordcache:
+  max_entries: 5000000
+  max_negative_ttl: 3600
+  max_ttl: 86400
+
+recursor:
+  threads: 16
+  max_mthreads: 1024
+  max_recursion_depth: 60
+  max_total_msec: 2000
+  minimum_ttl_override: 0
+  qname_minimization: true
+  serve_rfc1918: true
+  serve_rfc6303: true
+  nothing_below_nxdomain: 'yes'
+  server_id: "pdns-rec-5311"
+  stats_ringbuffer_entries: 50000
+  latency_statistic_size: 100000
+  stack_cache_size: 100000
+
+  forward_zones_recurse:
+    - zone: "."
+      recurse: true
+      forwarders:
+        - '127.0.0.1:5312'
